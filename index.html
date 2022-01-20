@@ -36,9 +36,8 @@
 			font-family: 'Lato';
 			width: 100%;
 			font-size: 13px;
-			margin: 0;
-			/*margin: auto;
-			padding: 0 4rem;*/
+			margin: auto;
+			padding: 0 4rem;
 			color: var(--text-dark);
 		}
 		img
@@ -276,6 +275,27 @@
 			margin: 0 auto;
 			width: calc(var(--img-size) + 4px);
 		}
+		.button
+		{
+			border-radius: 5px;
+			padding: 0.5em 1em;
+			background-color: var(--accent-light);
+			border: 2px solid var(--accent-light);
+			color: var(--accent-dark);
+			transition: 0.3s all ease-in-out;
+			text-decoration: none;
+		}
+		.button:hover
+		{
+			background-color: var(--accent-dark);
+			color: var(--accent-light);
+		}
+		.pdf-button
+		{
+			position: fixed;
+			top: 0.5em;
+			right: 0.5em;
+		}
 		@media(min-width: 950px)
 		{
 			.col-66
@@ -315,6 +335,7 @@
 	</style>
 </head>
 <body>
+	<a href="Maciej Woźniak CV.pdf" target="_blank" class="button pdf-button">Get PDF</a>
 	<div class="container" column-count="2">
 		<div class="col-66 light-section">
 			<h1>Maciej Woźniak</h1>
