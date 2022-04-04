@@ -100,7 +100,7 @@
 			display: flex;
 			align-items: center;
 		}
-		.timeline li:not(:last-of-type)
+		.timeline li.job-skills:not(:last-of-type)
 		{
 			margin-bottom: 1em;
 		}
@@ -298,6 +298,24 @@
 			position: fixed;
 			top: 0.5em;
 			right: 0.5em;
+		}
+		li.job-skills ul
+		{
+			padding-inline-start: 0px;
+		}
+		li.job-skills li
+		{
+			display: inline;
+		}
+		.badge
+		{
+			padding: 0.2em 0.4em;
+			line-height: 2em;
+			
+		}
+		.job-skills h4
+		{
+			margin-bottom: 0.5em;
 		}
 		@media(min-width: 950px)
 		{
@@ -532,76 +550,102 @@
 					</li>
 				</ul>
 			</div>
-			<div class="box languages">
-				<h2>Language skills</h2>
-				<div class="table">
-					<div>
-						<div>English</div>
-						<div points="5">
-							<strong>C1</strong>
-							<span class="empty-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-						</div>
-					</div>
-					<div>
-						<div>German</div>
-						<div points="2">
-							<strong>A2</strong>
-							<span class="empty-point"></span>
-							<span class="empty-point"></span>	
-							<span class="empty-point"></span>	
-							<span class="empty-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-						</div>
-					</div>
-				</div>
-			</div>
 			<div class="box work-history">
 				<h2>Work history</h2>
 				<ul class="timeline">
 					<li>
-						<span style="margin-right:0.4em">
-							02/2021 - present&nbsp
+						
+					</li>
+					<li>
+						<span class="job-header">
+							<span style="margin-right:0.4em">
+								<h3>PHP Developer</h3>
+								<i>Grupa eSprzedaż / Netgraf</i>
+							</span>
+							<span class="pointer"></span>
+							<span>
+								02/2021 - 03/2022&nbsp
+							</span>
 						</span>
-						<span class="pointer"></span>
-						<span>
-							<h3>PHP Developer</h3>
-							<i>Grupa eSprzedaż / Netgraf</i>
+						<span class="job-skills">
+							<h4>Main technologies:</h4>
+							<ul>
+								<li class="dark-section badge">PHP</li>
+								<li class="dark-section badge">Kohana</li>
+								<li class="dark-section badge">MySQL</li>
+								<li class="dark-section badge">Git</li>
+								<li class="dark-section badge">JIRA</li>
+							</ul>
 						</span>
 					</li>
 					<li>
-						<span>
-							10/2019 - 06/2021
+						<span class="job-header">
+							<span>
+								<h3>Programming Teacher</h3>
+								<i>Giganci Programowania sp. z o. o.</i>
+							</span>
+							<span class="pointer"></span>
+							<span>
+								10/2019 - 06/2021
+							</span>
 						</span>
-						<span class="pointer"></span>
-						<span>
-							<h3>Programming Teacher</h3>
-							<i>Giganci Programowania sp. z o. o.</i>
+						<span class="job-skills">
+							<h4>Main technologies:</h4>
+							<ul>
+								<li class="dark-section badge">C#</li>
+								<li class="dark-section badge">PHP</li>
+								<li class="dark-section badge">MySQL</li>
+								<li class="dark-section badge">HTML</li>
+								<li class="dark-section badge">CSS</li>
+								<li class="dark-section badge">JavaScript</li>
+							</ul>
 						</span>
 					</li>
 					<li>
-						<span>
-							11/2018 - 05/2021
+						<span class="job-header">
+							<span>
+								<h3>Junior Web Developer</h3>
+								<i>Kadeor sp. z o. o.</i>
+							</span>
+							<span class="pointer"></span>
+							<span>
+								11/2018 - 05/2021
+							</span>
 						</span>
-						<span class="pointer"></span>
-						<span>
-							<h3>Junior Web Developer</h3>
-							<i>Kadeor sp. z o. o.</i>
+						<span class="job-skills">
+							<h4>Main technologies:</h4>
+							<ul>
+								<li class="dark-section badge">PHP</li>
+								<li class="dark-section badge">MySQL</li>
+								<li class="dark-section badge">HTML</li>
+								<li class="dark-section badge">CSS</li>
+								<li class="dark-section badge">JavaScript</li>
+								<li class="dark-section badge">jQuery</li>
+								<li class="dark-section badge">Bootstrap</li>
+								<li class="dark-section badge">Laravel</li>
+								<li class="dark-section badge">Wordpress</li>
+								<li class="dark-section badge">PrestaShop</li>
+							</ul>
 						</span>
 					</li>
 					<li>
-						<span>
-							12/2017 - 04/2018
+						<span class="job-header">
+							<span>
+								<h3>Game Tester</h3>
+								<i>Testronic sp. z o. o.</i>
+							</span>
+							<span class="pointer"></span>
+							<span>
+								12/2017 - 04/2018
+							</span>
 						</span>
-						<span class="pointer"></span>
-						<span>
-							<h3>Game Tester</h3>
-							<i>Testronic sp. z o. o.</i>
+						<span class="job-skills">
+							<h4>Main technologies:</h4>
+							<ul>
+								<li class="dark-section badge">JIRA</li>
+								<li class="dark-section badge">TestRail</li>
+								<li class="dark-section badge">Confluence</li>
+							</ul>
 						</span>
 					</li>
 				</ul>
@@ -636,7 +680,7 @@
 				<h2>Education</h2>
 				<ul class="timeline">
 					<li>
-						<span>12/2017 - present</span>
+						<span>2017 - 2021</span>
 						<span class="pointer"></span>
 						<span>
 							<h3>Warsaw University of Technology<br>(Politechnika Warszawska)</h3>
@@ -644,6 +688,35 @@
 						</span>
 					</li>
 				</ul>
+			</div>
+			<div class="box languages">
+				<h2>Language skills</h2>
+				<div class="table">
+					<div>
+						<div>English</div>
+						<div points="5">
+							<strong>C1</strong>
+							<span class="empty-point"></span>
+							<span class="full-point"></span>
+							<span class="full-point"></span>
+							<span class="full-point"></span>
+							<span class="full-point"></span>
+							<span class="full-point"></span>
+						</div>
+					</div>
+					<div>
+						<div>German</div>
+						<div points="2">
+							<strong>A2</strong>
+							<span class="empty-point"></span>
+							<span class="empty-point"></span>	
+							<span class="empty-point"></span>	
+							<span class="empty-point"></span>
+							<span class="full-point"></span>
+							<span class="full-point"></span>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="box gdpr">
 			I agree to the processing of personal data provided in this document for realising the recruitment process pursuant to the Personal Data Protection Act of 10 May 2018 (Journal of Laws 2018, item 1000) and in agreement with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation).
