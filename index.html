@@ -327,6 +327,12 @@
 			align-items: center;
 			justify-content: space-between;
 		}
+
+		.skills-tree > li
+		{
+			margin-bottom: 0.6em;
+		}
+
 		@media(min-width: 950px)
 		{
 			.col-66
@@ -366,7 +372,7 @@
 	</style>
 </head>
 <body>
-	<a href="Maciej Woźniak CV.pdf" target="_blank" class="button pdf-button">Get PDF</a>
+<!--	<a href="Maciej Woźniak CV.pdf" target="_blank" class="button pdf-button">Get PDF</a>-->
 	<div class="container" column-count="2">
 		<div class="col-66 light-section">
 			<h1>Maciej Woźniak</h1>
@@ -374,12 +380,12 @@
 				<h2>Tech skills</h2>
 				<ul class="skills-tree">
 					<li>
-						<span>Programming languages and frameworks</span>
+						<span>Back-end technologies</span>
 						<ul>
 							<li>
-								<span points="5">
+								<span points="6">
 									PHP
-									<span class="empty-point"></span>
+									<span class="full-point"></span>
 									<span class="full-point"></span>
 									<span class="full-point"></span>
 									<span class="full-point"></span>
@@ -387,56 +393,43 @@
 									<span class="full-point"></span>
 								</span>
 								<ul>
-									<li points="4">
-										Kohana
+									<li points="6">
+										Symfony
+										<span class="full-point"></span>
+										<span class="full-point"></span>
+										<span class="full-point"></span>
+										<span class="full-point"></span>
+										<span class="full-point"></span>
+										<span class="full-point"></span>
+									</li>
+									<li points="5">
+										Laravel
 										<span class="empty-point"></span>
-										<span class="empty-point"></span>
+										<span class="full-point"></span>
 										<span class="full-point"></span>
 										<span class="full-point"></span>
 										<span class="full-point"></span>
 										<span class="full-point"></span>
 									</li>
 									<li points="3">
-										Laravel
+										Kohana
 										<span class="empty-point"></span>
 										<span class="empty-point"></span>
 										<span class="empty-point"></span>
 										<span class="full-point"></span>
-										<span class="full-point"></span>
-										<span class="full-point"></span>
-									</li>
-									<li points="2">
-										Symfony
-										<span class="empty-point"></span>
-										<span class="empty-point"></span>
-										<span class="empty-point"></span>
-										<span class="empty-point"></span>
 										<span class="full-point"></span>
 										<span class="full-point"></span>
 									</li>
 								</ul>
 							</li>
-							<li>
-								<span points="4">
-								JavaScript
+							<li points="2">
+								Go
+								<span class="empty-point"></span>
+								<span class="empty-point"></span>
 								<span class="empty-point"></span>
 								<span class="empty-point"></span>
 								<span class="full-point"></span>
 								<span class="full-point"></span>
-								<span class="full-point"></span>
-								<span class="full-point"></span>
-								</span>
-								<ul>
-									<li points="5">
-										jQuery
-										<span class="empty-point"></span>
-										<span class="full-point"></span>
-										<span class="full-point"></span>
-										<span class="full-point"></span>
-										<span class="full-point"></span>
-										<span class="full-point"></span>
-									</li>
-								</ul>
 							</li>
 							<li points="2">
 								C#
@@ -450,121 +443,258 @@
 						</ul>
 					</li>
 					<li>
-						<span>Auxiliary languages</span>
+						<span>Databases</span>
 						<ul>
 							<li points="6">
-							HTML
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-						</li>
+								MySQL
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+							</li>
 							<li points="5">
-							CSS
-							<span class="empty-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-						</li>
-							<li points="5">
-							MySQL
-							<span class="empty-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-						</li>
+								ClickHouse
+								<span class="empty-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+							</li>
+							<li points="4">
+								ElasticSearch
+								<span class="empty-point"></span>
+								<span class="empty-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+							</li>
+							<li points="3">
+								Redis
+								<span class="empty-point"></span>
+								<span class="empty-point"></span>
+								<span class="empty-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+							</li>
 						</ul>
 					</li>
 					<li>
-						<span>Other</span>
+						<span>Front-end technologies</span>
 						<ul>
-								<li points="4">
-							Design patterns
-							<span class="empty-point"></span>
-							<span class="empty-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-						</li>
+							<li>
+								<span points="3">
+									JavaScript
+									<span class="empty-point"></span>
+									<span class="empty-point"></span>
+									<span class="empty-point"></span>
+									<span class="full-point"></span>
+									<span class="full-point"></span>
+									<span class="full-point"></span>
+								</span>
+								<ul>
+									<li points="4">
+										jQuery
+										<span class="empty-point"></span>
+										<span class="empty-point"></span>
+										<span class="full-point"></span>
+										<span class="full-point"></span>
+										<span class="full-point"></span>
+										<span class="full-point"></span>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<span points="5">
+									CSS
+									<span class="empty-point"></span>
+									<span class="full-point"></span>
+									<span class="full-point"></span>
+									<span class="full-point"></span>
+									<span class="full-point"></span>
+									<span class="full-point"></span>
+								</span>
+								<ul>
+									<li points="4">
+										Bootstrap
+										<span class="empty-point"></span>
+										<span class="empty-point"></span>
+										<span class="full-point"></span>
+										<span class="full-point"></span>
+										<span class="full-point"></span>
+										<span class="full-point"></span>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<span>Approaches and concepts</span>
+						<ul>
+							<li points="6">
+								REST API
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+							</li>
+							<li points="6">
+								OOP
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+							</li>
 							<li points="5">
-							OOP
-							<span class="empty-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-						</li>	
+								DDD
+								<span class="empty-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+							</li>
+							<li points="5">
+								TDD
+								<span class="empty-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+							</li>
 							<li points="4">
-							Git
-							<span class="empty-point"></span>
-							<span class="empty-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-						</li>
+								Design patterns
+								<span class="empty-point"></span>
+								<span class="empty-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+							</li>
+							<li points="4">
+								SOLID
+								<span class="empty-point"></span>
+								<span class="empty-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+							</li>
+							<li points="4">
+								CI/CD
+								<span class="empty-point"></span>
+								<span class="empty-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<span>Testing tools</span>
+						<ul>
+							<li points="5">
+								PHPUnit
+								<span class="empty-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+							</li>
+							<li points="2">
+								Behat
+								<span class="empty-point"></span>
+								<span class="empty-point"></span>
+								<span class="empty-point"></span>
+								<span class="empty-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<span>Containerization and orchestration</span>
+						<ul>
+							<li points="4">
+								Docker
+								<span class="empty-point"></span>
+								<span class="empty-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+							</li>
+							<li points="2">
+								Docker Swarm
+								<span class="empty-point"></span>
+								<span class="empty-point"></span>
+								<span class="empty-point"></span>
+								<span class="empty-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<span>Message queues</span>
+						<ul>
 							<li points="3">
-							Docker
-							<span class="empty-point"></span>
-							<span class="empty-point"></span>
-							<span class="empty-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-						</li>
-							<li points="3">
-							PHPUnit
-							<span class="empty-point"></span>
-							<span class="empty-point"></span>
-							<span class="empty-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-						</li>
+								Rabbit MQ
+								<span class="empty-point"></span>
+								<span class="empty-point"></span>
+								<span class="empty-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<span>Monitoring and Analysis Systems</span>
+						<ul>
 							<li points="5">
-							Bootstrap
-							<span class="empty-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-						</li>
+								Grafana
+								<span class="empty-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<span>Version control</span>
+						<ul>
 							<li points="5">
-							PrestaShop
-							<span class="empty-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-						</li>
+								Git
+								<span class="empty-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+							</li>
 							<li points="5">
-							Wordpress
-							<span class="empty-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-						</li>
-							<li points="5">
-							JIRA
-							<span class="empty-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-							<span class="full-point"></span>
-						</li>
+								Gitlab
+								<span class="empty-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+								<span class="full-point"></span>
+							</li>
 						</ul>
 					</li>
 				</ul>
@@ -572,6 +702,29 @@
 			<div class="box work-history">
 				<h2>Work history</h2>
 				<ul class="timeline">
+					<li>
+						<span class="job-header">
+							<span style="margin-right:0.4em">
+								<h3>PHP Developer</h3>
+								<i>Daftcode</i>
+							</span>
+							<span>
+								<strong>05/2022 - now</strong>
+							</span>
+						</span>
+						<span class="job-skills">
+							<h4>Main technologies:</h4>
+							<span class="dark-section badge">PHP</span>
+							<span class="dark-section badge">Symfony</span>
+							<span class="dark-section badge">Laravel</span>
+							<span class="dark-section badge">MySQL</span>
+							<span class="dark-section badge">ClickHouse</span>
+							<span class="dark-section badge">ElasticSearch</span>
+							<span class="dark-section badge">Docker</span>
+							<span class="dark-section badge">PHPUnit</span>
+							<span class="dark-section badge">Grafana</span>
+						</span>
+					</li>
 					<li>
 						<span class="job-header">
 							<span style="margin-right:0.4em">
